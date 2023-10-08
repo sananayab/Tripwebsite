@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TripSage</title>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static 'css/result.css' %}" />
+    <style>
+        #ral{
+          color: red;
+          background: lightcyan;
+            margin: 3%;
+        }
+
+      #ashe{
+          color: red;
+          background: lightcyan;
+          margin: 3%;
+      }
+
+      #char{
+          color: red;
+          background: lightcyan;
+          margin: 3%;
+      }
+
+      h3{
+          color: blue;
+          text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+      }
+      h2{
+          color: purple;
+      }
+    </style>
+</head>
+<body>
+{% load static %}
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/resultsPage.js' %}"></script>
+<h2>Places along with their ratings only for you........</h2>
+
+<div class="loader"></div>
+<div id="ral">
+</div>
+<div id="ashe">
+</div>
+<div id="char">
+</div>
+
+</body>
+</html>
